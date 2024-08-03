@@ -3,7 +3,7 @@ import { Navitems } from "../utils/Data";
 
 const  Navbar = () => {
   return (
-    <header className="padding-x py-8 z-10 w-full relative top-0">
+    <header className="padding-x py-8 z-10 w-full bg-transparent top-0 fixed">
       <nav className="flex justify-around items-center max-container">
         <a href="/">
           <img
@@ -19,7 +19,7 @@ const  Navbar = () => {
             <li key={item.label}>
               <a
                 href={item.href}
-                className="font-montserrat leading-normal text-lg text-slate-gray"
+                className="font-montserrat leading-normal text-lg text-slate-gray hover:text-white"
               >
                 {item.label}
               </a>
