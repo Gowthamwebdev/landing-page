@@ -1,4 +1,4 @@
-import CarouselComponent from "./components/CarouselComponent";
+
 import Home from "./components/Home"
 import Navbar from "./components/Navbar";
 import Varieties from "./components/Varieties";
@@ -7,7 +7,6 @@ const App = () => {
       <>
         <Navbar/>
         <Home/>
-        <CarouselComponent/>
         <Varieties />
       </>
   )
