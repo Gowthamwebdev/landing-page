@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
 import Watch1 from '../assets/watch1.png';
-import { motion } from 'framer-motion';
+import {  motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect/dist/core';
-import { FadeIn } from '../Variants';
+import { FadeIn, HeroImgVariant } from '../Variants';
 
 const Home = () => {
   const typewriterRef = useRef(null);
@@ -44,17 +44,17 @@ const Home = () => {
       </motion.div>
       
       <motion.div
-        initial={{ opacity: 0, scale: null }}
-        animate={{ opacity: 1, scale: [1, 1.1, 1] }}
-        transition={{ 
-          duration: 1, 
-          ease: "easeInOut", 
+      variants={HeroImgVariant()}
+        initial={"initial"}
+        whileInView={"whileInView"}
+        transition={{
+          duration: 1,
+          ease: "easeInOut"
         }}
         className="w-full lg:w-1/2 flex justify-center"
       >
         <div>
           <img src={Watch1} className="h-[60vh] rounded-lg" alt="Watch" />
-          <div className="bg-slate-300 w-8 h-8 absolute bottom-[5%] rounded-lg z-10"></div>
         </div>
       </motion.div>
     </div>

@@ -17,3 +17,21 @@ export const FadeIn = (direction, delay) =>{
         }
     }
 }
+
+export const HeroImgVariant = () =>{
+        return {
+            initial: {
+                opacity: 0,
+                scale: null,
+            },
+            whileInView: {
+                opacity: 1,
+                scale: [1, 1.1, 1],
+                duration: 300
+            }
+        }
+}
+
+export const typeWriter = () =>{
+    
+}
