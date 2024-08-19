@@ -1,3 +1,5 @@
+import { transform } from "framer-motion"
+
 export const FadeIn = (direction, delay) =>{
     return {
         hidden: {
@@ -32,6 +34,26 @@ export const HeroImgVariant = () =>{
         }
 }
 
-export const typeWriter = () =>{
-    
+export const Bounce = (delay) =>{
+    return {
+        initial: {
+            opacity: 0,
+            scale: null,
+            x: 40,
+            y: 0,
+        },
+        whileInView: {
+            opacity: 1,
+            scale: 1,
+            x: 0,
+            y: 0,
+            transition: {
+                type: 'spring',
+                duration: 1,
+                delay: delay,
+                ease: [0.25, 0.25, 0.25, 0.75],
+                times: [0, 0.5, 0.5, 0.75, 1]
+            }
+        }
+    }
 }
