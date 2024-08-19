@@ -1,23 +1,41 @@
 import { motion } from "framer-motion"
+import { Bounce } from "../Variants";
 
 const Varieties = () => {
+  const bounceDelay = 0.5;
+
   return (
-    <div className='h-[100vh] w-screen bg-primary'>
-      <h1>Varities</h1>
+    <div className="h-[100vh] w-screen bg-primary">
+      <h1>Varieties</h1>
+      
       <motion.div
+        variants={Bounce(bounceDelay)}
+        initial={"initial"}
+        whileInView={"whileInView"}
+        viewport={{ once: false, amount: 0.8 }}
       >
         unisex Watches
       </motion.div>
 
-      <div>
+      <motion.div
+        variants={Bounce(bounceDelay + 0.2)} 
+        initial="initial"
+        whileInView="whileInView"
+        viewport={{ once: false, amount: 0.8 }}
+      >
         Stylished look
-      </div>
+      </motion.div>
 
-      <div>
+      <motion.div
+        variants={Bounce(bounceDelay + 0.4)} 
+        initial="initial"
+        whileInView="whileInView"
+        viewport={{ once: false, amount: 0.8 }}
+      >
         Enhanced comfortness
-      </div>
+      </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default Varieties
+export default Varieties;
