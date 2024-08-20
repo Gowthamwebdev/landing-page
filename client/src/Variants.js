@@ -1,4 +1,3 @@
-import { transform } from "framer-motion"
 
 export const FadeIn = (direction, delay) =>{
     return {
@@ -55,5 +54,19 @@ export const Bounce = (delay = 0) => {
                 times: [0, 0.5, 0.75, 1] 
             }
         }
+    }
+}
+
+export const infiniteBounce = () =>{
+    return {
+        animate: {    
+            y: [0, -50], 
+          },
+          transition: {
+            duration: .8,
+            ease: "easeInOut",
+            repeat: Infinity, 
+            repeatType: "reverse", 
+          }
     }
 }

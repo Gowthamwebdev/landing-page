@@ -19,16 +19,13 @@ const  Navbar = () => {
             <li key={item.label}>
               <a
                 href={item.href}
-                className="font-montserrat leading-normal text-lg text-slate-gray hover:font-semibold"
+                className="font-montserrat leading-normal text-lg text-slate-gray"
               >
                 {item.label}
               </a>
             </li>
           ))}
         </ul>
-        <div>
-          Search bar
-        </div>
         <div>
           
         </div>

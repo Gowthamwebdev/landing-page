@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { Bounce } from "../Variants";
+import { Bounce, infiniteBounce } from "../Variants";
 
 const Varieties = () => {
   const bounceDelay = 0.5;
@@ -34,6 +34,15 @@ const Varieties = () => {
       >
         Enhanced comfortness
       </motion.div>
+
+      <motion.div 
+  variants={infiniteBounce}
+  animate={"animate"}
+  transition={"transition"}
+>
+ lime
+</motion.div>
+
     </div>
   );
 };

@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import Watch1 from '../assets/watch1.png';
 import {  motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect/dist/core';
-import { FadeIn, HeroImgVariant } from '../Variants';
+import {  HeroImgVariant } from '../Variants';
 
 const Home = () => {
   const typewriterRef = useRef(null);
@@ -28,13 +28,16 @@ const Home = () => {
   return (
     <div className='w-full h-[100vh] flex items-center justify-center lg:flex-row flex-col bg-white'>
       <motion.div 
-      variants={FadeIn("right", 0)}
-      initial="hidden"
-      whileInView={"show"}
-      viewport={{once: false, amount: 0.7}}
+      variants={HeroImgVariant()}
+      initial={"initial"}
+      whileInView={"whileInView"}
+      transition={{
+        duration: 1,
+        ease: "easeInOut"
+      }}
       className="w-1/2 text-center">
-        <h2 className="text-center text-2xl lg:text-4xl text-slate-800 font-mono font-bold">
-          Weekend Sale <span className='text-2xl lg:text-4xl text-orange-800'>is Live now!</span>
+        <h2 className="text-center text-2xl lg:text-8xl text-slate-800 font-mono font-bold">
+          Weekend Sale <span className='text-2xl lg:text-6xl text-orange-800 z-10'>is Live now!</span>
         </h2>
         <div ref={typewriterRef} className='text-xl lg:text-2xl my-4 font-semibold font-mono text-slate-800'>
         </div>
