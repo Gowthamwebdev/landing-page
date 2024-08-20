@@ -57,16 +57,31 @@ export const Bounce = (delay = 0) => {
     }
 }
 
-export const infiniteBounce = () =>{
+export const infiniteBounce = () => {
     return {
-        animate: {    
-            y: [0, -50], 
-          },
-          transition: {
-            duration: .8,
-            ease: "easeInOut",
-            repeat: Infinity, 
-            repeatType: "reverse", 
-          }
+      hidden: {
+        y: 0,
+        opacity: 0,
+      },
+      visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+          duration: 0.8,
+          ease: "easeInOut",
+        }
+      },
+      animate: {    
+        y: [0, -50, 0], 
+        opacity: 1,
+        transition: {
+          duration: 0.8,
+          ease: "easeInOut",
+          repeat: Infinity, 
+          repeatType: "loop",
+          delay: 3,
+        }
+      }
     }
-}
+  }
+  

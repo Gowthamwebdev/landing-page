@@ -3,7 +3,7 @@ import { Navitems } from "../utils/Data";
 
 const  Navbar = () => {
   return (
-    <header className="padding-x py-8 z-10 w-full bg-transparent top-0 fixed">
+    <header className="padding-x p-10 py-8 z-10 w-full bg-transparent top-0 fixed">
       <nav className="flex justify-around items-center max-container">
         <a href="/">
           <img
@@ -29,7 +29,7 @@ const  Navbar = () => {
         <div>
           
         </div>
-        <div className="flex flex-1 gap-2 fonr-monserrat font-medium leading-normal max-lg:hidden items-center justify-center">
+        <div className="flex flex-1 gap-2 font-monserrat font-medium leading-normal max-lg:hidden items-center justify-center">
           <span>Sign-in</span>
           <span>/</span>
           <span>Explore</span>
