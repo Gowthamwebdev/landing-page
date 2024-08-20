@@ -34,14 +34,26 @@ export const HeroImgVariant = () =>{
         }
 }
 
-export const Bounce = () => {
+export const Bounce = (delay = 0) => {
     return {
-        animate:{ y: [0, -20, 0] },  // Moves up by 20px and then back down
-      transition:{
-        duration: 1,              // Duration of each cycle (up and down)
-        repeat: Infinity,         // Repeats the animation infinitely
-        repeatType: "loop",       // Loops the animation without reversing
-        ease: "easeInOut"         // Smooth acceleration and deceleration
-      }
+        initial: {
+            opacity: 0,
+            scale: 0.8,  
+            x: 0,       
+            y: 40,      
+        },
+        whileInView: {
+            opacity: 1,
+            scale: [0.8, 1.1, 1], 
+            x: 0,
+            y: 0,
+            transition: {
+                type: 'spring',    
+                duration: 0.8,      
+                delay: delay,       
+                ease: [0.25, 0.25, 0.25, 0.75],
+                times: [0, 0.5, 0.75, 1] 
+            }
+        }
     }
 }
