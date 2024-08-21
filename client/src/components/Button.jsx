@@ -12,7 +12,7 @@ export const Button = ({
         ${
           backgroundColor
             ? `${backgroundColor} ${textColor} ${borderColor}`
-            : "bg-blue-gray-900 text-white border-slate-700"
+            : "bg-gradient-to-r from-slate-600 to-slate-800 text-white border-slate-700"
         } rounded-full ${fullWidth && "w-full"}`}
       >
         {label}

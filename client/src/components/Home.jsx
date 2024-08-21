@@ -41,15 +41,15 @@ const Home = () => {
           }}
           className="w-full"
         >
-          <h2 className="text-4xl lg:text-8xl text-slate-800 font-mono font-bold">
+          <h2 className="text-4xl lg:text-8xl text-slate-800 font-mono font-bold ">
             Weekend Sale <span className='text-2xl lg:text-6xl  z-10'>is Live now!</span>
           </h2>
           <div ref={typewriterRef} className='text-xl lg:text-2xl my-4 font-semibold font-mono text-slate-800'></div>
         </motion.div>
         <div className='w-full flex justify-center lg:justify-start my-4'>
-          <Button label="Shop now" iconURL={KeyboardArrowRightIcon} />
+          <Button label="Shop now" />
         </div>
-        <div className=' bg-purple-100 shadow- rounded-lg font-serif p-5 flex flex-row max-w-sm'>
+        <div className=' bg-purple-300 shadow- rounded-lg font-serif p-5 flex flex-row max-w-sm'>
           <img src={handShake} alt="" className='w-1/6 h-1/3' />
           <div>
           <p>1000+ Collection</p><br />
@@ -72,7 +72,7 @@ const Home = () => {
           <img src={Watch1} className="h-[60vh] rounded-lg" alt="Woman with Watch" />
         </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{
               opacity: 0,
               scale: 0,
@@ -89,12 +89,12 @@ const Home = () => {
               delay: 3,
             }}
             viewport={{ once: false, amount: 0.8 }}
-            className="absolute top-3/4 left-[-120px] transform -translate-y-1/2 z-20 w-16 h-16 bg-orange-500 rounded-full"
+            className="absolute top-3/4 left-[-120px] transform -translate-y-1/2 z-20 w-16 h-16 rounded-full"
           >
             <img src={Watch1} alt="" className='w-full h-full bg-cover rounded-full' />
-          </motion.div>
+          </motion.div> */}
 
-          <motion.div 
+          {/* <motion.div 
             variants={infiniteBounce()}
             animate="animate"
             initial={{
@@ -103,7 +103,7 @@ const Home = () => {
             viewport={{ once: false, amount: 0.8 }}
           className="absolute top-1/2 right-[-40px] transform -translate-y-1/2 z-20 w-16 h-16 bg-orange-500 rounded-full">
           <img src={Watch1} alt="" className='w-full h-full bg-cover rounded-full' />
-          </motion.div>
+          </motion.div> */}
       </div>
       </div>
   );

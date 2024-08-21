@@ -5,7 +5,7 @@ const Varieties = () => {
   const bounceDelay = 0.5;
 
   return (
-    <div className="h-full w-screen bg-primary">
+    <div className="h-full w-screen bg-slate-100">
       <h1>Varieties</h1>
       
       <motion.div
