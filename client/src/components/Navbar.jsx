@@ -27,7 +27,7 @@ const Navbar = () => {
           <div className="hidden lg:flex justify-center space-x-12 items-center">
             <a
               href="#"
-              className="bg-gradient-to-r from-orange-600 to-red-800 py-2 px-3 rounded-md text-white"
+              className="bg-gradient-to-r from-primary to-secondary py-2 px-3 rounded-md text-white"
             >
               Create an account
             </a>
