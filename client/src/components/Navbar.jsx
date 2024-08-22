@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="container px-4 mx-auto relative lg:text-sm">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
-            <span className="text-xl tracking-tight font-mono font-semibold">
+            <span className="text-xl tracking-tight font-mono font-semibold bg-gradient-to-t from-primary to-red-800 text-transparent bg-clip-text">
               Crox watches
             </span>
           </div>
@@ -27,7 +27,7 @@ const Navbar = () => {
           <div className="hidden lg:flex justify-center space-x-12 items-center">
             <a
               href="#"
-              className="bg-gradient-to-r from-slate-600 to-slate-800 py-2 px-3 rounded-md text-white"
+              className="bg-gradient-to-r from-orange-600 to-red-800 py-2 px-3 rounded-md text-white"
             >
               Create an account
             </a>

@@ -4,3 +4,5 @@ export const navItems = [
     { href: "#products", label: "Products" },
     { href: "#contact-us", label: "Contact Us" },
   ];
+
+  export const announcement = "../assets/announcement.png";
