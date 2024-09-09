@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b">
+    <nav className="sticky top-0 z-50 py-3 bg-white border-b">
       <div className="container px-4 mx-auto relative lg:text-sm">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
@@ -80,7 +80,7 @@ const Navbar = () => {
             <div className="flex space-x-6">
               <a
                 href="#"
-                className="py-2 px-3 rounded-md bg-gradient-to-r from-slate-600 to-slate-800"
+                className="py-2 px-3 rounded-md bg-gradient-to-r from-primary to-secondary"
               >
                 Create an account
               </a>
